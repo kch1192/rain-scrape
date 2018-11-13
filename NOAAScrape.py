@@ -33,7 +33,7 @@ for features in range(len(weather["features"])):
     #create dictionary of dictionaries
     weather_dict = {}
 
-    #only select dictionaries with scalar observations
+    #only select observations with scalar attributes
     for i in prop_key:
         if ("value" in properties[i]):
             weather_dict[i] = properties[i]
