@@ -24,8 +24,8 @@ weather_list = []
 for features in range(len(weather["features"])):
 
     #each weather["features"] dictionary is an observation at a particular time
-    #each further element (weather["features"][feature] in the dictionary is an observation property: time, rainfall, etc
-    #"properties" are the properties of any given observation: scalar values, measurement units, etc.
+    #each further element (weather["features"][feature]) in the dictionary is an observed attribute: time, rainfall, etc
+    #"properties" are the properties of any given attribute: scalar value, units of measurement, etc.
     
     prop_key = list(weather["features"][features]["properties"].keys())
     properties = weather["features"][features]["properties"]
